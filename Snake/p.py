@@ -18,12 +18,14 @@ def pull() :
 
 def autoPull() :
 	while True :
-		time.sleep()
 		os.system("git pull")
+		time.sleep(10)
 
 while True :
-	usrInput = raw_input("\n1) Push\n2) Pull\n(")
+	usrInput = raw_input("\n1) Push\n2) Pull\n3) Automatic pull\n(")
 	if str(usrInput) == '1' :
 		push()
 	elif str(usrInput) == '2' :
 		pull()
+	elif str(usrInput) == '3' :
+		autoPull()
