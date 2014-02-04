@@ -10,7 +10,7 @@ def push() :
 	os.system("git push origin master")
 
 while True :
-	usrInput = raw_input("1) Push\n2) Pull\n:")
+	usrInput = raw_input("1) Push\n2) Pull\n(")
 	if str(usrInput) == '1' :
 		push()
 	elif usrInput == 2 :
