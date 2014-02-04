@@ -1,4 +1,5 @@
 from Tkinter import *
+from bwidget import *
 
 # Create Window/GUI
 
@@ -12,10 +13,10 @@ master.configure(bg='white')
 def closewindow():
 	exit()
 
-# Define "CloseWindow" = "Callback"
+# Define "Callback" = "Callback"
 
 def callback():
-    print "TestHi"
+    print "Example Button was Clickt!"
 
 
 # Text field/Label num.1
