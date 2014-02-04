@@ -1,6 +1,10 @@
 #!/usr/bin/python
 
 import os
+import time
+
+os.system("git config --global credential.helper cache")
+os.system("git config --global credential.helper 'cache --timeout=3600'")
 
 def push() :
 	comment = None
@@ -11,6 +15,11 @@ def push() :
 
 def pull() :
 	os.system("git pull")
+
+def autoPull() :
+	while True :
+		time.sleep()
+		os.system("git pull")
 
 while True :
 	usrInput = raw_input("\n1) Push\n2) Pull\n(")
