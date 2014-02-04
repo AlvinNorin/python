@@ -2,6 +2,8 @@
 
 import os
 
+os.system("git config --global credential.helper cache")
+
 def push() :
 	comment = None
 	os.system("cd && cd python && git add Snake")

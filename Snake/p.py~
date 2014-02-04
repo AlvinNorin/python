@@ -14,7 +14,6 @@ def pull() :
 
 while True :
 	usrInput = raw_input("\n1) Push\n2) Pull\n(")
-	print '\n'
 	if str(usrInput) == '1' :
 		push()
 	elif str(usrInput) == '2' :
