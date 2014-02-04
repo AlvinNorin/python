@@ -9,9 +9,12 @@ def push() :
 	os.system("git commit -m \""+comment+"\"")
 	os.system("git push origin master")
 
+def pull() :
+	os.system("git pull")
+
 while True :
 	usrInput = raw_input("\n1) Push\n2) Pull\n(")
 	if str(usrInput) == '1' :
 		push()
-	elif usrInput == 2 :
+	elif str(usrInput) == '2' :
 		pull()
