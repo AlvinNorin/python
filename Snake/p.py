@@ -18,8 +18,11 @@ def pull() :
 
 def autoPull() :
 	while True :
+		comment = '-'
+		os.system("cd && cd python && git add Snake")
+		os.system("git commit -m \""+comment+"\"")
+		os.system("git push origin master")
 		os.system("git pull")
-		time.sleep(10)
 
 while True :
 	usrInput = raw_input("\n1) Push\n2) Pull\n3) Automatic pull\n(")
